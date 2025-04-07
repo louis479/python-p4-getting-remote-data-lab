@@ -8,7 +8,7 @@ CONVERTED_DATA = [{ 'name': 'Daniel', 'occupation' : 'LG Fridge Salesman' }, { '
 def test_get_response():
         '''get_response_body function returns response.'''
         requester = GetRequester(URL)
-        assert(requester.get_response_body() == JSON_STRING)
+        assert(requester.get_response_body() == JSON_STRING.decode("utf-8"))
 
 def test_load_json():
         '''load_json function returns response.'''
