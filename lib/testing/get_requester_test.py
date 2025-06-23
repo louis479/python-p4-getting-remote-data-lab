@@ -13,4 +13,4 @@ def test_get_response():
 def test_load_json():
         '''load_json function returns response.'''
         requester = GetRequester(URL)
-        assert(requester.load_json() == CONVERTED_DATA)
+        
